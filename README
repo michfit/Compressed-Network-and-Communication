@@ -1,0 +1,19 @@
+NAME: Michelle Su
+EMAIL: xuehuasu@gmail.com
+ID: 404804135
+
+Description of Files
+
+lab1b-client.c
+	This source file contains the C code for the client program as described in the spec. The client process connects to the server process using a TCP connection. 
+
+lab1b-server.c 
+	This source file contains the C code for the server program as described in the spec. The server process is connected to the client via a TCP connection and to the shell via pipes in both directions.
+
+Both source files implement compression to increase the efficiency of communication over the socket between the server and client.
+
+Makefile
+	This file contains the commands needed to build the program and tarball. It contains the client, server, default, clean, and dist targets.
+
+Citations
+In both lab1b-server.c and lab1b-client.c, I implemented compression, referencing the code in a Stack Overflow thread https://stackoverflow.com/questions/7540259/deflate-and-inflate-zlib-h-in-c. I also used the zlib(3) manual page https://www.zlib.net/manual.html and zlib tutorial https://www.zlib.net/zlib_how.html in order to further my understanding and implement compression.
